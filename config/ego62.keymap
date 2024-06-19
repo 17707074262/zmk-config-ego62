@@ -13,7 +13,7 @@
         insert: new_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(RA(KP_EQUAL))>;
+            bindings = <&kp LC(RA(EQUAL))>;
             label = "NEW_MACRO";
         };
     };
