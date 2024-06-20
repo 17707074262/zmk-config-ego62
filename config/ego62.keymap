@@ -17,13 +17,6 @@
             bindings = <&kp LC(RA(EQUAL))>;
             label = "NEW_MACRO";
         };
-
-        save: save {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LA(O)>;
-            label = "NEW_MACRO";
-        };
     };
 
     keymap {
