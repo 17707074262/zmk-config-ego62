@@ -17,7 +17,7 @@
 &kp TAB     &kp Q      &kp W   &kp E           &kp R          &kp T                             &kp Y      &kp U      &kp I          &kp O         &kp P          &kp LEFT_ARROW
 &kp CAPS    &kp A      &kp S   &kp D           &kp F          &kp G                             &kp H      &kp J      &kp K          &kp L         &kp SEMICOLON  &kp RIGHT_ARROW
 &kp RC(Z)   &kp Z      &kp X   &kp C           &kp V          &kp B                             &kp N      &kp M      &kp COMMA      &kp DOT       &kp SLASH      &kp DOWN
-&kp RC(X)   &kp RC(V)  &tog 1  &kp LEFT_SHIFT  &kp BACKSPACE  &kp LEFT_ALT  &kp DEL  &kp ENTER  &kp RCTRL  &kp SPACE  &kp PAGE_DOWN  &kp NUMBER_3  &kp LBKT       &kp RBKT
+&kp RC(X)   &kp RC(V)  &mo 1   &kp LEFT_SHIFT  &kp BACKSPACE  &kp LEFT_ALT  &kp DEL  &kp ENTER  &kp RCTRL  &kp SPACE  &kp PAGE_DOWN  &kp NUMBER_3  &kp LBKT       &kp RBKT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -29,7 +29,7 @@
 &none    &none      &none   &none   &none   &none                 &none   &none     &kp UP         &none             &none           &kp F12
 &none    &none      &none   &none   &none   &none                 &none   &kp LEFT  &kp DOWN       &kp RIGHT         &kp SEMICOLON   &kp SQT
 &none    &none      &none   &none   &none   &none                 &none   &none     &kp LESS_THAN  &kp GREATER_THAN  &kp SLASH       &none
-&none    &kp GRAVE  &tog 0  &none   &none   &none   &none  &none  &none   &none     &none          &none             &kp LEFT_BRACE  &kp RIGHT_BRACE
+&mt A B  &kp GRAVE  &none   &none   &none   &none   &none  &none  &none   &none     &none          &none             &kp LEFT_BRACE  &kp RIGHT_BRACE
             >;
         };
     };
