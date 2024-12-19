@@ -15,7 +15,7 @@
         enghlishdot: enghlishdot {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp DOT>;
+            bindings = <>;
             label = "ENGHLISHDOT";
         };
     };
