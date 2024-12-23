@@ -9,14 +9,15 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/pointing.h>
 
 / {
     macros {
-        enghlishdot: enghlishdot {
+        selectrow: selectrow {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <>;
-            label = "ENGHLISHDOT";
+            bindings = <&mkp LCLK &mkp LCLK>;
+            label = "SELECTROW";
         };
     };
 
@@ -25,11 +26,11 @@
 
         layer0 {
             bindings = <
-&kp ESCAPE        &kp LC(A)  &kp LC(C)  &kp LC(X)  &kp LC(V)      &kp LA(A)                           &kp N1      &kp N2     &kp N3         &kp N4            &kp NUMBER_5   &kp N6
-&kp TAB           &kp Q      &kp W      &kp E      &kp R          &kp T                               &kp Y       &kp U      &kp I          &kp O             &kp P          &kp NUMBER_7
-&kp CAPS          &kp A      &kp S      &kp D      &kp F          &kp G                               &kp H       &kp J      &kp K          &kp L             &kp SEMICOLON  &kp NUMBER_8
-&kp LEFT_SHIFT    &kp Z      &kp X      &kp C      &kp V          &kp B                               &kp N       &kp M      &kp COMMA      &kp DOT           &kp NUMBER_0   &kp NUMBER_9
-&kp LEFT_COMMAND  &kp LC(V)  &mo 2      &mo 1      &kp BACKSPACE  &kp LEFT_ALT  &kp LCTRL  &kp ENTER  &kp DELETE  &kp SPACE  &kp PAGE_DOWN  &kp SINGLE_QUOTE  &kp LBKT       &kp RBKT
+&kp ESCAPE        &kp LC(A)   &kp LC(C)  &kp LC(X)  &kp LC(V)      &kp LA(A)                           &kp N1      &kp N2     &kp N3         &kp N4            &kp NUMBER_5   &kp N6
+&kp TAB           &kp Q       &kp W      &kp E      &kp R          &kp T                               &kp Y       &kp U      &kp I          &kp O             &kp P          &kp NUMBER_7
+&kp CAPS          &kp A       &kp S      &kp D      &kp F          &kp G                               &kp H       &kp J      &kp K          &kp L             &kp SEMICOLON  &kp NUMBER_8
+&kp LEFT_SHIFT    &kp Z       &kp X      &kp C      &kp V          &kp B                               &kp N       &kp M      &kp COMMA      &kp DOT           &kp NUMBER_0   &kp NUMBER_9
+&kp LEFT_COMMAND  &selectrow  &mo 2      &mo 1      &kp BACKSPACE  &kp LEFT_ALT  &kp LCTRL  &kp ENTER  &kp DELETE  &kp SPACE  &kp PAGE_DOWN  &kp SINGLE_QUOTE  &kp LBKT       &kp RBKT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
